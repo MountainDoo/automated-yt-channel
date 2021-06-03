@@ -32,7 +32,7 @@ def upload_compilation(video_file, video_title, video_desc):
             },
         'notifySubscribers': False
         }
-
+ 
     mediaFile = MediaFileUpload(video_file)
 
     response_upload = youtube.videos().insert(
