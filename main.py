@@ -81,7 +81,8 @@ def main():
     
     #Upload video compilation to YouTube
     upload_compilation.upload_compilation(output_file_name, title, video_desc)
-
+    print('Video uploaded to YouTube.')
+    
     #Send notification tweet when video is uploaded
     send_notification.send_tweet(title, video_desc)
     print('Notification tweet sent out.')
