@@ -5,7 +5,7 @@ from TikTokApi import TikTokApi
 import string
 import random
 import os
-#verifyFp might need to change daily
+
 DAILY_TRENDING_DIR = "directory location for downloaded tiktok videos"
 verifyFp = 'use s_v_web_id cookie from tiktok.com'
 did = ''.join(random.choice(string.digits) for num in range(19))
