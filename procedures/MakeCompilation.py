@@ -28,7 +28,7 @@ def select_videos(daily_trending_videos, top_videos):
         print("Copying file: " + vid)
         shutil.copy(os.path.join(daily_trending_videos, vid), top_videos)
 
-              
+             
     
 def create_video(top_ten_vids, output_file_name):
     videos = os.listdir(top_ten_vids)
