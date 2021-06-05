@@ -30,16 +30,10 @@ def remove_videos(file_dir):
         os.remove(os.path.join(vid_dir, file))
 
 def generate_title():
-    lead_char = string.ascii_uppercase
-    letter_gen = string.ascii_letters
-    number_gen = string.digits
-    lead = ''.join(random.choice(lead_char) for i in range(2))
-    part_one = ''.join(random.choice(letter_gen + number_gen) for i in range(15))
-    part_two = ''.join(random.choice(letter_gen + number_gen) for i in range(15))
-    rand_characters = lead + part_one + part_two
-    
-    #print(rand_characters)
-    return rand_characters
+    cur_date = datetime.date.today()
+    title = 'Video Compilation for ' + str(cur_date)
+
+    return title
 
 title = generate_title()
 #print(title)
