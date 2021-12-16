@@ -15,9 +15,9 @@ import procedures.MakeCompilation as make_compilation
 import procedures.UploadCompilation as upload_compilation
 import procedures.SendNotification as send_notification
 
-MAIN_DIR = "directory to hold other directories"
-DAILY_TRENDING_DIR = "directory location for downloaded tiktok videos"
-TOP_TEN_VIDS_DIR = "directory location for top 10 videos"
+MAIN_DIR = (r"directory to hold other directories")
+DAILY_TRENDING_DIR = (r"directory location for downloaded tiktok videos")
+TOP_TEN_VIDS_DIR = (r"directory location for top 10 videos")
 
 output_file_text = "This file was uploaded on: "
 todays_date = datetime.date.today()
