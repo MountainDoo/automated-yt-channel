@@ -7,9 +7,9 @@ import moviepy
 from moviepy.editor import VideoFileClip, concatenate_videoclips
 import random
 
-OUTPUT_DIR = "directory where the compiled video will be saved"
-DAILY_TRENDING_DIR = 'directory location for downloaded tiktok videos'
-TOP_TEN_VIDS_DIR = 'directory location for top 10 videos'
+OUTPUT_DIR = (r"directory where the compiled video will be saved")
+DAILY_TRENDING_DIR = (r"directory location for downloaded tiktok videos")
+TOP_TEN_VIDS_DIR = (r"directory location for top 10 videos")
 
 def select_videos(daily_trending_videos, top_videos):
     os.chdir(daily_trending_videos)
