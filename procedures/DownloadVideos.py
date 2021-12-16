@@ -6,7 +6,7 @@ import string
 import random
 import os
 
-DAILY_TRENDING_DIR = "directory location for downloaded tiktok videos"
+DAILY_TRENDING_DIR = (r"directory location for downloaded tiktok videos")
 verifyFp = 'use s_v_web_id cookie from tiktok.com'
 did = ''.join(random.choice(string.digits) for num in range(19))
 
